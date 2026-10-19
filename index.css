@@ -1557,7 +1557,6 @@ body.project-modal-open {
         transition: none;
     }
 }
-```css
 /* =========================
    HOME / HERO SECTION
 ========================= */
@@ -1714,8 +1713,6 @@ body.project-modal-open {
     color: #06111d;
 }
 
-/* SMALL TECH TAGLINE */
-
 .home-social-text {
     display: flex;
     align-items: center;
@@ -1801,4 +1798,3 @@ body.project-modal-open {
         letter-spacing: 1px;
     }
 }
-```
