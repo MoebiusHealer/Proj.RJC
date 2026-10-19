@@ -22,41 +22,66 @@
 
     <div class="site-content">
 
-    <header id="home">
-        <p class="greeting">WELCOME TO MY PORTFOLIO</p>
+    <header id="home" class="home-section">
+    <div class="home-container">
 
-        <img
-            class="Profile"
-            src="Images/Profile.jpg"
-            alt="Profile photo of Rodrigo Jhon L. Calleja"
-        >
+        <!-- LEFT SIDE: PROFILE IMAGE -->
+        <div class="home-image">
+            <div class="profile-image-frame">
+                <img
+                    src="Images/profile.jpg"
+                    alt="Rodrigo Jhon L. Calleja"
+                    class="profile-photo"
+                >
+            </div>
+        </div>
 
-        <h1>Rodrigo Jhon L. Calleja</h1>
+        <!-- RIGHT SIDE: INTRODUCTION -->
+        <div class="home-content">
+            <p class="home-greeting">HELLO, I'M</p>
 
-        <h2 class="title">
-            Computer Engineering Student
-        </h2>
+            <h1 class="home-name">
+                Rodrigo Jhon L. Calleja
+            </h1>
 
-        <p class="subtitle">
-            Software Development | Hardware Technology
-        </p>
+            <h2 class="home-title">
+                Computer Engineering Student
+            </h2>
 
-        <p class="description">
-            A Computer Engineering student interested in
-            microcontroller projects, web development, PC building,
-            hardware troubleshooting, and operating system installation.
-            I enjoy combining software and hardware to develop practical
-            technology solutions.
-        </p>
+            <p class="home-description">
+                Passionate about computer hardware, software development,
+                electronics, and innovative technology. I enjoy creating
+                practical solutions, exploring new technologies, and
+                continuously developing my skills as a future computer
+                engineer.
+            </p>
 
-        <a class="hero-button" href="#projects">Explore My Projects</a>
+            <div class="home-buttons">
+                <a href="#projects" class="home-btn primary-btn">
+                    Explore My Projects
+                </a>
+
+                <a href="#contact" class="home-btn secondary-btn">
+                    Contact Me
+                </a>
+            </div>
+
+            <div class="home-social-text">
+                <span></span>
+                COMPUTER ENGINEERING • TECHNOLOGY • INNOVATION
+            </div>
+        </div>
+
+    </div>
+</section>
+```
     </header>
 
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#skills">Skills &amp; Tools</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -374,7 +399,6 @@
                         </div>
                     </article>
 
-                    <!-- DUPLICATE CARDS FOR SEAMLESS ANIMATION -->
 
                     <article class="project-card" aria-hidden="true">
                         <img class="project-image"
@@ -476,42 +500,277 @@
             </div>
         </section>
 
-        <section id="skills">
-            <h2>Skills and Tools</h2>
+        
+<section id="skills" class="skills-tools-section">
 
-            <p class="section-intro">
-                Technologies and technical areas I work with and study.
-            </p>
+    <h2>Skills &amp; Tools</h2>
 
-            <div class="skills-container">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">Visual Studio Code</span>
-                <span class="skill">GitHub</span>
-                <span class="skill">Arduino IDE</span>
-                <span class="skill">Microcontrollers</span>
-                <span class="skill">PC Building</span>
-                <span class="skill">Hardware Troubleshooting</span>
-                <span class="skill">OS Installation</span>
+    <p class="section-intro">
+        My practical technical skills, software knowledge,
+        and hardware tools used in computer engineering.
+    </p>
+
+    <!-- =========================
+         PRACTICAL SKILLS
+    ========================== -->
+    <div class="skills-subsection">
+
+        <h3 class="skills-heading">Technical Skills</h3>
+
+        <p class="skills-description">
+            Click a skill to explore its description.
+        </p>
+
+        <div class="skills-grid">
+
+            <!-- SKILL 1 -->
+            <article class="skill-card">
+                <button class="skill-card-trigger"
+                        type="button"
+                        aria-expanded="false">
+
+                    <img src="Images/computer-assembly.jpg"
+                         alt="Computer assembly">
+
+                    <span>Computer Assembly</span>
+                    <span class="skill-expand-icon">+</span>
+                </button>
+
+                <div class="skill-details" hidden>
+                    <p class="skill-typing-text"
+                       data-description="Assembling and disassembling desktop computers, identifying components, installing hardware, and checking component compatibility for reliable system performance."></p>
+                </div>
+            </article>
+
+            <!-- SKILL 2 -->
+            <article class="skill-card">
+                <button class="skill-card-trigger"
+                        type="button"
+                        aria-expanded="false">
+
+                    <img src="Images/os-installation.jpg"
+                         alt="Operating system installation">
+
+                    <span>Operating System Installation</span>
+                    <span class="skill-expand-icon">+</span>
+                </button>
+
+                <div class="skill-details" hidden>
+                    <p class="skill-typing-text"
+                       data-description="Preparing bootable installation media, installing operating systems, configuring system settings, and installing essential drivers and applications."></p>
+                </div>
+            </article>
+
+            <!-- SKILL 3 -->
+            <article class="skill-card">
+                <button class="skill-card-trigger"
+                        type="button"
+                        aria-expanded="false">
+
+                    <img src="Images/sound-system.jpg"
+                         alt="Sound system setup">
+
+                    <span>Sound System Setup</span>
+                    <span class="skill-expand-icon">+</span>
+                </button>
+
+                <div class="skill-details" hidden>
+                    <p class="skill-typing-text"
+                       data-description="Setting up audio equipment, connecting amplifiers and speakers, organizing audio cables, and checking sound output for clear and balanced audio."></p>
+                </div>
+            </article>
+
+            <!-- SKILL 4 -->
+            <article class="skill-card">
+                <button class="skill-card-trigger"
+                        type="button"
+                        aria-expanded="false">
+
+                    <img src="Images/gadget-repair.jpg"
+                         alt="Gadget repair">
+
+                    <span>Gadget Repair</span>
+                    <span class="skill-expand-icon">+</span>
+                </button>
+
+                <div class="skill-details" hidden>
+                    <p class="skill-typing-text"
+                       data-description="Inspecting electronic gadgets, identifying common hardware problems, performing basic troubleshooting, and assisting with appropriate repair and maintenance procedures."></p>
+                </div>
+            </article>
+
+            <!-- SKILL 5 -->
+            <article class="skill-card">
+                <button class="skill-card-trigger"
+                        type="button"
+                        aria-expanded="false">
+
+                    <img src="Images/crimping.jpg"
+                         alt="Network cable crimping">
+
+                    <span>Cable Crimping</span>
+                    <span class="skill-expand-icon">+</span>
+                </button>
+
+                <div class="skill-details" hidden>
+                    <p class="skill-typing-text"
+                       data-description="Preparing Ethernet cables, arranging wires according to standard wiring schemes, attaching RJ45 connectors, and checking cable connections for network use."></p>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+
+    <!-- =========================
+         SOFTWARE TOOLS
+    ========================== -->
+    <div class="tools-subsection">
+
+        <h3 class="skills-heading">Software Tools</h3>
+
+        <p class="skills-description">
+            Programming languages, development environments,
+            and design software I use or study.
+        </p>
+
+        <div class="tools-list software-tools">
+
+            <span class="tool-item">JavaScript</span>
+            <span class="tool-item">Python</span>
+            <span class="tool-item">HTML</span>
+            <span class="tool-item">GitHub</span>
+            <span class="tool-item">Arduino IDE</span>
+            <span class="tool-item">CSS</span>
+            <span class="tool-item">Visual Studio Code</span>
+            <span class="tool-item">C++</span>
+            <span class="tool-item">Java</span>
+            <span class="tool-item">AutoCAD</span>
+            <span class="tool-item">SketchUp</span>
+
+        </div>
+    </div>
+
+
+    <!-- =========================
+         HARDWARE TOOLS
+    ========================== -->
+    <div class="tools-subsection">
+
+        <h3 class="skills-heading">Hardware Tools &amp; Equipment</h3>
+
+        <p class="skills-description">
+            Equipment and accessories for computer maintenance,
+            electronics work, and technical tasks.
+        </p>
+
+        <div class="tools-list hardware-tools">
+
+            <span class="tool-item">Soldering Station</span>
+            <span class="tool-item">Crimping Tools</span>
+            <span class="tool-item">Microprocessors</span>
+            <span class="tool-item">Bootable USB</span>
+
+        </div>
+    </div>
+
+</section>
+
+  
+<!-- =========================
+     CONTACT SECTION
+========================== -->
+<section id="contact" class="contact-section">
+
+    <h2>Get In Touch</h2>
+
+    <p class="section-intro">
+        Have a question, project idea, or collaboration in mind?
+        Feel free to reach out through any of the channels below.
+    </p>
+
+    <div class="contact-grid">
+
+        <!-- PHONE -->
+        <a class="contact-card"
+           href="tel:+639948452302">
+
+            <div class="contact-icon" aria-hidden="true">
+                &#9742;
             </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
+            <h3>Contact Number</h3>
 
-            <p class="section-intro">
-                Feel free to contact me for inquiries or collaboration.
+            <p>+63 994 845 2302</p>
+
+            <span class="contact-action">Call me &rarr;</span>
+        </a>
+
+        <!-- EMAIL -->
+        <a class="contact-card"
+           href="mailto:callejarodrigojhonl@gmail.com">
+
+            <div class="contact-icon" aria-hidden="true">
+                &#9993;
+            </div>
+
+            <h3>Email Address</h3>
+
+            <p class="contact-email">
+                callejarodrigojhonl@gmail.com
             </p>
 
-            <p>
-                Email:
-                <a href="mailto:callejarodrigojhonl@gmail.com">
-                    callejarodrigojhonl@gmail.com
-                </a>
-            </p>
-        </section>
+            <span class="contact-action">Send an email &rarr;</span>
+        </a>
+
+        <!-- TELEGRAM -->
+        <a class="contact-card"
+           href="https://t.me/+639565208173"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <div class="contact-icon" aria-hidden="true">
+                &#10148;
+            </div>
+
+            <h3>Telegram</h3>
+
+            <p>+63 956 520 8173</p>
+
+            <span class="contact-action">Message me &rarr;</span>
+        </a>
+
+    </div>
+
+    <!-- FUN EASTER EGG -->
+    <div class="ml-easter-egg">
+
+        <h3>Feeling Lucky?</h3>
+
+        <p>
+            Think you can claim your free Mobile Legends skin?
+            Try catching the button!
+        </p>
+
+        <div class="ml-button-arena" id="mlButtonArena">
+
+            <button
+                type="button"
+                class="ml-skin-button"
+                id="mlSkinButton">
+
+                Click for ML Free Skin
+            </button>
+
+        </div>
+
+        <p class="ml-prank-caption">
+            &#128521; Let's see if you can catch it!
+        </p>
+
+    </div>
+
+</section>
 
     </main>
 
@@ -526,74 +785,173 @@
     </div><!-- End site-content -->
 
     <!-- Project card interaction -->
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const track = document.getElementById("projectTrack");
 
-        if (!track) return;
+<!-- Centered Project Preview -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const track = document.getElementById("projectTrack");
+    const projectWindow = document.getElementById("projectWindow");
 
-        const cards = track.querySelectorAll(
-            ".project-card:not([aria-hidden='true'])"
+    if (!track || !projectWindow) return;
+
+    const cards = track.querySelectorAll(".project-card");
+    let selectedCard = null;
+    let lastFocusedElement = null;
+
+    // Create the modal once.
+    const modal = document.createElement("div");
+    modal.className = "project-modal";
+    modal.setAttribute("aria-hidden", "true");
+
+    modal.innerHTML = `
+        <div class="project-modal-content"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="modalProjectTitle">
+
+            <button class="project-modal-close"
+                    type="button"
+                    aria-label="Close project preview">
+                &times;
+            </button>
+
+            <img class="project-modal-image" src="" alt="">
+
+            <div class="project-modal-info">
+                <span class="project-modal-category"></span>
+                <h2 id="modalProjectTitle"></h2>
+                <p class="project-modal-description"></p>
+                <div class="project-modal-tags"></div>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    const modalContent = modal.querySelector(".project-modal-content");
+    const modalImage = modal.querySelector(".project-modal-image");
+    const modalCategory = modal.querySelector(".project-modal-category");
+    const modalTitle = modal.querySelector("#modalProjectTitle");
+    const modalDescription = modal.querySelector(".project-modal-description");
+    const modalTags = modal.querySelector(".project-modal-tags");
+    const closeButton = modal.querySelector(".project-modal-close");
+
+    function openProject(card) {
+        const image = card.querySelector(".project-image");
+        const category = card.querySelector(".project-category");
+        const title = card.querySelector("h3");
+        const description = card.querySelector(".project-info p");
+        const tags = card.querySelectorAll(".project-tags .tag");
+
+        if (!image || !title) return;
+
+        // Remember the clicked card for keyboard accessibility.
+        lastFocusedElement = card;
+        selectedCard = card;
+
+        // Fill the centered preview.
+        modalImage.src = image.src;
+        modalImage.alt = image.alt || title.textContent.trim();
+
+        modalCategory.textContent = category
+            ? category.textContent.trim()
+            : "PROJECT";
+
+        modalTitle.textContent = title.textContent.trim();
+
+        modalDescription.textContent = description
+            ? description.textContent.trim()
+            : "";
+
+        modalTags.replaceChildren();
+
+        tags.forEach(function (tag) {
+            const tagElement = document.createElement("span");
+            tagElement.className = "tag";
+            tagElement.textContent = tag.textContent.trim();
+            modalTags.appendChild(tagElement);
+        });
+
+        // Pause the animation while the modal is open.
+        track.classList.add("is-paused");
+        projectWindow.classList.add("has-selection");
+
+        // Show the modal.
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("project-modal-open");
+
+        closeButton.focus();
+    }
+
+    function closeProject() {
+        if (!modal.classList.contains("is-open")) return;
+
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("project-modal-open");
+
+        track.classList.remove("is-paused");
+        projectWindow.classList.remove("has-selection");
+
+        selectedCard = null;
+
+        // Return keyboard focus to the card that opened the modal.
+        if (lastFocusedElement && lastFocusedElement.isConnected) {
+            lastFocusedElement.focus({ preventScroll: true });
+        }
+    }
+
+    // Make every card clickable, including animation duplicates.
+    cards.forEach(function (card) {
+        card.setAttribute("tabindex", "0");
+        card.setAttribute("role", "button");
+        card.setAttribute("aria-pressed", "false");
+        card.setAttribute(
+            "aria-label",
+            "View project: " +
+            (card.querySelector("h3")?.textContent.trim() || "Project")
         );
 
-        let selectedCard = null;
-
-        function closeSelectedProject() {
-            if (selectedCard) {
-                selectedCard.classList.remove("is-selected");
-                selectedCard.setAttribute("aria-pressed", "false");
-                selectedCard = null;
-            }
-
-            track.classList.remove("is-paused");
-        }
-
-        function selectProject(card) {
-            if (selectedCard === card) {
-                closeSelectedProject();
-                return;
-            }
-
-            closeSelectedProject();
-
-            selectedCard = card;
-            selectedCard.classList.add("is-selected");
-            selectedCard.setAttribute("aria-pressed", "true");
-            track.classList.add("is-paused");
-        }
-
-        cards.forEach(function (card) {
-            card.setAttribute("tabindex", "0");
-            card.setAttribute("role", "button");
-            card.setAttribute("aria-pressed", "false");
-
-            card.addEventListener("click", function () {
-                selectProject(card);
-            });
-
-            card.addEventListener("keydown", function (event) {
-                if (event.key === "Enter" || event.key === " ") {
-                    event.preventDefault();
-                    selectProject(card);
-                }
-            });
+        card.addEventListener("click", function (event) {
+            event.stopPropagation();
+            openProject(card);
         });
 
-        document.addEventListener("click", function (event) {
-            if (!event.target.closest(
-                "#projectTrack .project-card:not([aria-hidden='true'])"
-            )) {
-                closeSelectedProject();
-            }
-        });
-
-        document.addEventListener("keydown", function (event) {
-            if (event.key === "Escape") {
-                closeSelectedProject();
+        card.addEventListener("keydown", function (event) {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                openProject(card);
             }
         });
     });
-    </script>
+
+    // Close using the X button.
+    closeButton.addEventListener("click", closeProject);
+
+    // Close when clicking the dark backdrop.
+    modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            closeProject();
+        }
+    });
+
+    // Clicking inside the preview should not close it.
+    modalContent.addEventListener("click", function (event) {
+        event.stopPropagation();
+    });
+
+    // Close using Escape.
+    document.addEventListener("keydown", function (event) {
+        if (
+            event.key === "Escape" &&
+            modal.classList.contains("is-open")
+        ) {
+            closeProject();
+        }
+    });
+});
+</script>
 
 </body>
 </html>
